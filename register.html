@@ -1,38 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #94E068;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: black;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+ h1 {
+    text-align: center;
 
-    <form action="action_page.php">
-        <div class="container">
-          <h1>Registro</h1>
-          <p>Vamos a crear una nueva cuenta.</p>
-          <hr>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
-      
-          <label for="psw"><b>Clave</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-      
-          <label for="psw-repeat"><b>Repite Clave</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-          <hr>
-      
-          
-          <button type="submit" class="registerbtn">Registro</button>
-        </div>
-      
-        <div class="container signin">
-          <p>¿Tienes ya una cuenta? <a href="#">Iniciar Sección</a>.</p>
-        </div>
-      </form>
-    
-</body>
-</html>
+ }
+
+</style>   
+</head>    
+<body>    
+    <h1> Fomulario de Register </h1>  
+    <form>  
+        <div class="container">   
+            <label>Usuario : </label>   
+            <input type="text" placeholder="Inserte Usuario" name="username" required> 
+            <label>Email : </label>   
+            <input type="text" placeholder="Inserte Email" name="email" required> 
+            <label>Contraseña : </label>   
+            <input type="password" placeholder="Inserte Contraseña" name="password" required>  
+            <label>Repita Contraseña : </label>   
+            <input type="password" placeholder="Repita Contraseña" name="repassword" required> 
+            <button type="submit">Registrar</button>   
+            <input type="checkbox" checked="checked"> Recordarme   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Recordar <a href="#"> Contraseña </a>   
+        </div>   
+    </form>     
+</body>     
+</html>  
